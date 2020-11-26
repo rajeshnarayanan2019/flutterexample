@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/screens/lanchscreen.dart';
 import 'package:flutter_app/screens/homescreen.dart';
+import 'package:flutter_app/screens/profile.dart';
 
 void main() {
   runApp(MyAPP());
@@ -29,6 +30,17 @@ class _MyAPPState extends State<MyAPP> {
                   ],
                 ),
                 body: HomeScreeen(),
+
+              ),
+              '/profile': (context) => Scaffold(
+                appBar: AppBar(
+                  title: Text("Profile page"),
+                  actions: <Widget>[
+                    //  getActions(context, authState),
+                  ],
+                ),
+                body: Profile(),
+
               )
             },
           );
